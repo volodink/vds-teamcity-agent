@@ -1,0 +1,8 @@
+teamcityagent:
+  build: .
+  restart: always
+  volumes:
+    - ./conf:/data/teamcity_agent/conf
+  environment:
+    - SERVER_URL="https://itstime4science.ru:8111"
+    
